@@ -16,7 +16,9 @@ public class AffectationHashMap {
     }
 
     public void supprimerEmploye(Employe e) {
-        map.remove(e);
+        if(map.containsKey(e)){
+            map.remove(e);
+        }
     }
 
     public void supprimerEmployeEtDepartement(Employe e, Departement d) {
